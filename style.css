@@ -21,6 +21,11 @@ main {
 	justify-content: space-between;
 }
 
+.logo {
+	display: flex;
+	margin-right: 10px;
+}
+
 .toggle-button {
 	width: 3rem;
 	background: transparent;
@@ -39,6 +44,7 @@ main {
 	color: #0e4f1f;
 	text-decoration: none;
 	font-weight: bold;
+	margin-top: 5px;
 }
 
 .main-header__brand img {
@@ -60,6 +66,7 @@ sub {
 
 input {
 	padding: 9px 13rem;
+	flex-shrink: 0;
 }
 
 .search button {
@@ -96,6 +103,7 @@ input {
 
 .sign {
 	display: flex;
+	flex-shrink: 0;
 	align-items: center;
 	border: 1px solid blue;
 	color: blue;
