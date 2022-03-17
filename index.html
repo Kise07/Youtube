@@ -2,74 +2,175 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Youtube</title>
-	<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="style.css" />
-	l
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Google font icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Youtube UI clone</title>
 </head>
 
 <body>
-	<header class="main-header">
-		<div class="item">
-			<div class="logo">
-				<button class="toggle-button">
-					<img src="assets/menu.png" alt="" />
-				</button>
-				<a href="index.html" class="main-header__brand">
-					<img src="assets/Youtube.png" alt="Youtube-Home" />
-				</a>
-				<sub><small>IN</small></sub>
-			</div>
-			<div class="search">
-				<input type="search">
-				<button>
-					<img src="assets/search-icon.png" alt="" />
-				</button>
-				<img src="assets/mic-logo.png" alt="" class="mic" />
-			</div>
-			<nav class="main-nav">
-				<ul class="main-nav__items">
-					<li class="main-nav__item">
-						<script src="https://cdn.lordicon.com/lusqsztk.js"></script>
-						<lord-icon src="https://cdn.lordicon.com/qdkecjfu.json" trigger="hover" colors="primary:#121331"
-							state="hover-2" style="width: 32px; height: 32px">
-						</lord-icon>
-					</li>
-					<li class="main-nav__item">
-						<img src="assets/grid-menu.png" alt="" class="option2" />
-					</li>
-					<li class="main-nav__item">
-						<img src="assets/dot-menu.png" alt="" class="option3" />
-					</li>
-					<li class="main-nav__item sign">
-						<img src="assets/acc-icon.png" alt="" />
-						<p>SIGN IN</p>
-					</li>
-				</ul>
-			</nav>
+	<!-- header starts -->
+	<div class="header">
+		<div class="header__left">
+			<i class="material-icons">menu</i>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/2560px-YouTube_Logo_2017.svg.png"
+				alt="">
 		</div>
-	</header>
 
-	<div class="menu">
-		<ul class="item">
-			<li><img src="assets/home.svg" alt="Home"> Home</li>
-			<li><img src="assets/explore.svg" alt="Explore"> Explore</li>
-			<li><img src="assets/shorts.svg" alt="Shorts"> Shorts</li>
-			<li><img src="assets/subscriptions.svg" alt="subscriptions"> Subcriptions</li>
-			<hr>
-			<li><img src="assets//library.svg" alt="Library"> Library</li>
-			<li><img src="assets/history.svg" alt="History"> History</li>
-			<li><img src="assets/video.svg" alt="Your videos"> Your videos</li>
-			<li><img src="assets/later.svg" alt="Watch later"> Watch later</li>
-			<li><img src="assets/like.svg" alt="Liked videos"> Liked videos</li>
-			<li><img src="assets/arrow.svg" alt="Show more"> Show more</li>
-			<hr>
-			<span>Subscriptions</span>
-		</ul>
+		<div class="header__search">
+			<form action="">
+				<input type="text" placeholder="Search">
+				<button><i class="material-icons">search</i></button>
+			</form>
+		</div>
+
+		<div class="hearder__icons">
+			<i class="material-icons">videocam</i>
+			<i class="material-icons">apps</i>
+			<i class="material-icons">notifications</i>
+			<i class="material-icons">account_circle</i>
+		</div>
 	</div>
+	<!-- header ends -->
+
+	<!-- main body starts -->
+
+	<div class="mainBody">
+		<!-- Sidebar Starts -->
+		<div class="sidebar">
+			<div class="sidebar__categories">
+				<div class="sidebar__category">
+					<i class="material-icons">home</i>
+					<span>Home</span>
+				</div>
+				<div class="sidebar__category">
+					<i class="material-icons">local_fire_department</i>
+					<span>Trending</span>
+				</div>
+				<div class="sidebar__category">
+					<i class="material-icons">subscriptions</i>
+					<span>Subscriptions</span>
+				</div>
+			</div>
+			<hr>
+			<div class="sidebar__categories">
+				<div class="sidebar__category">
+					<i class="material-icons">library_add_check</i>
+					<span>Library</span>
+				</div>
+				<div class="sidebar__category">
+					<i class="material-icons">history</i>
+					<span>History</span>
+				</div>
+				<div class="sidebar__category">
+					<i class="material-icons">play_arrow</i>
+					<span>Your Videos</span>
+				</div>
+				<div class="sidebar__category">
+					<i class="material-icons">watch_later</i>
+					<span>Watch Later</span>
+				</div>
+				<div class="sidebar__category">
+					<i class="material-icons">thumb_up</i>
+					<span>Liked Videos</span>
+				</div>
+			</div>
+			<hr>
+		</div>
+
+		<!-- Sidebar Ends -->
+
+		<div class="videos">
+			<h1>Recommended</h1>
+			<div class="videos__container">
+				<!-- Single video Starts -->
+				<div class="video">
+					<div class="video__thumbnail">
+						<img src="" alt="">
+					</div>
+
+					<div class="video__details">
+						<div class="author">
+							<img src="" alt="">
+						</div>
+
+						<div class="title">
+							<h3></h3>
+							<a href=""></a>
+							<span></span>
+						</div>
+					</div>
+				</div>
+				<!-- Single video Ends -->
+
+				<!-- Single video Starts -->
+				<div class="video">
+					<div class="video__thumbnail">
+						<img src="" alt="">
+					</div>
+
+					<div class="video__details">
+						<div class="author">
+							<img src="" alt="">
+						</div>
+
+						<div class="title">
+							<h3></h3>
+							<a href=""></a>
+							<span></span>
+						</div>
+					</div>
+				</div>
+				<!-- Single video Ends -->
+
+				<!-- Single video Starts -->
+				<div class="video">
+					<div class="video__thumbnail">
+						<img src="" alt="">
+					</div>
+
+					<div class="video__details">
+						<div class="author">
+							<img src="" alt="">
+						</div>
+
+						<div class="title">
+							<h3></h3>
+							<a href=""></a>
+							<span></span>
+						</div>
+					</div>
+				</div>
+				<!-- Single video Ends -->
+
+				<!-- Single video Starts -->
+				<div class="video">
+					<div class="video__thumbnail">
+						<img src="" alt="">
+					</div>
+
+					<div class="video__details">
+						<div class="author">
+							<img src="" alt="">
+						</div>
+
+						<div class="title">
+							<h3></h3>
+							<a href=""></a>
+							<span></span>
+						</div>
+					</div>
+				</div>
+				<!-- Single video Ends -->
+			</div>
+		</div>
+	</div>
+
+	<!-- main body ends -->
 </body>
 
 </html>
